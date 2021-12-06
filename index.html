@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>칼로리 계산기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="query">
+        <input type="text" placeholder="식품이름을 입력해주세요.">
+        <button>검색</button>
+    </form>
+
+    <ul id="list">
+        <li>
+            <div class="dep1">
+                <h2 id="foodName">식품 이름</h2>
+                <span class="print_data">1인분<span>총 내용량</span></span>
+                <span class="print_data">열량<span>kcal</span></span>
+                <span class="print_data">탄수화물<span>100g</span></span>
+                <span class="print_data">단백질<span>200g</span></span>
+                <span class="print_data">지방<span>300g</span></span>
+                <span class="chev"></span>
+            </div>
+            <div class="dep2">
+                <h4>섭취량</h4>
+                <form id="inputdata">
+                    <input type="number" value="1.0">
+                    <button>저장</button>
+                    <span class="print_data">열량<span>kcal</span></span>
+                    <span class="print_data">탄수화물<span>100g</span></span>
+                    <span class="print_data">단백질<span>200g</span></span>
+                    <span class="print_data">지방<span>300g</span></span>
+                </form>
+            </div>
+            <button>저장</button>
+        </li>
+    </ul>
+    <footer>
+        <h2 id="foodName">섭취정보</h2>
+        <span class="print_data">열량<span>kcal</span></span>
+        <span class="print_data">탄수화물<span>100g</span></span>
+        <span class="print_data">단백질<span>200g</span></span>
+        <span class="print_data">지방<span>300g</span></span>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
