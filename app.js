@@ -15,6 +15,13 @@ function getData() {
 
     if (target.readyState == XMLHttpRequest.DONE) {
       if (target.status == 200) {
+        // 데이터 초기화
+        data = [];
+        document.querySelectorAll(".li").forEach((v, i) => {
+          if (v) {
+            v.remove();
+          }
+        });
         // 검색후 도출되는 데이터 변수 정의
         const req = JSON.parse(target.response).I2790.row;
 
@@ -58,11 +65,11 @@ function getData() {
 // 데이터 출력
 function printData() {
   const list = document.querySelector("#list");
-  list.innerHTML = "";
 
   data.map((v, i) => {
     // 생성할 요소들 정의
     const li = document.createElement("li");
+    li.setAttribute("class", "li");
     li.style.height = "75px";
     const dep1 = document.createElement("div");
     const dep2 = document.createElement("div");
