@@ -1,1 +1,211 @@
 @import url(reset.css);
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+
+h1 {
+  margin: 50px 0;
+  font-size: 30px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#searchBox {
+  margin: 20px 0;
+}
+
+#query {
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px solid #d5d5d5;
+  width: 200px;
+  font-size: 15px;
+  outline: none;
+  text-align: center;
+  color: #707070;
+  font-weight: bold;
+}
+
+#searchBox button {
+  background-color: white;
+  border: none;
+}
+
+.fa-search {
+  font-size: 17px;
+  color: #919191;
+}
+
+li {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px rgba(88, 88, 88, 0.7);
+  overflow: hidden;
+  transition: height 0.3s ease;
+  margin-bottom: 9px;
+}
+
+.dep1 {
+  height: 75px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.name_box {
+  width: 350px;
+}
+
+.food_name {
+  display: inline-block;
+  font-size: 25px;
+  padding: 9px;
+  color: #4b4b4b;
+  cursor: pointer;
+}
+
+.dep1 > span {
+  color: #707070;
+  margin-left: 60px;
+}
+
+.dep1 span span {
+  margin-left: 10px;
+}
+
+.dep1 .chev {
+  margin: 0;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dep1 .chev .fas {
+  transition: transform 0.3s ease;
+}
+
+/* 숨겨진 영역 */
+.dep2 {
+  height: 75px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dep2 h4 {
+  font-size: 20px;
+  color: #4b4b4b;
+  margin-left: 9px;
+  margin-right: 50px;
+}
+
+#inputData input {
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px solid #d5d5d5;
+  width: 200px;
+  font-size: 15px;
+  outline: none;
+  text-align: center;
+  color: #707070;
+  font-weight: bold;
+}
+
+#inputData button {
+  font-size: 17px;
+  background-color: white;
+  border: 2px solid rgba(88, 88, 88, 0.4);
+  border-radius: 5px;
+  color: #919191;
+  font-weight: bold;
+  padding: 2px 8px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.dep2 > span {
+  color: #707070;
+  margin-left: 60px;
+}
+
+.dep2 > span:nth-child(3) {
+  margin-left: 16px;
+}
+
+.dep2 span span {
+  margin-left: 10px;
+}
+
+.save {
+  position: absolute;
+  right: 77px;
+  font-size: 17px;
+  background-color: white;
+  border: 2px solid rgba(88, 88, 88, 0.4);
+  border-radius: 5px;
+  color: #919191;
+  font-weight: bold;
+  padding: 2px 8px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.save:hover,
+#inputData button:hover {
+  background-color: #919191;
+  color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  border-top: 1.5px solid rgba(88, 88, 88, 0.4);
+  background-color: rgb(240, 240, 240);
+}
+
+.total_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#delete {
+  position: absolute;
+  right: 77px;
+  font-size: 17px;
+  background-color: white;
+  border: 2px solid rgba(88, 88, 88, 0.4);
+  border-radius: 5px;
+  color: #919191;
+  font-weight: bold;
+  padding: 2px 8px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+#delete:hover {
+  background-color: #919191;
+  color: white;
+}
+
+.total_title {
+  font-size: 20px;
+}
+
+.total_container > span > span {
+  margin-left: 10px;
+}

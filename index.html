@@ -2,58 +2,35 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>칼로리 계산기</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .food_name {
-            display: inline-block;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <form id="searchBox">
-        <input type="text" id="query" placeholder="식품이름을 입력해주세요." value="김치">
-        <button>검색</button>
-    </form>
+    <div class="container">
+        <h1>칼로리 계산기</h1>
+        <form id="searchBox">
+            <input type="text" id="query" placeholder="식품이름을 입력해주세요." />
+            <button><i class="fas fa-search"></i></button>
+        </form>
 
-    <ul id="list">
-        <!-- <li>
-            <div class="dep1">
-                <h2 class="food_name">식품 이름</h2>
-                <span class="print_data">1인분<span>총 내용량</span></span>
-                <span class="print_data">열량<span>kcal</span></span>
-                <span class="print_data">탄수화물<span>100g</span></span>
-                <span class="print_data">단백질<span>200g</span></span>
-                <span class="print_data">지방<span>300g</span></span>
-                <span class="chev"></span>
-            </div>
-            <div class="dep2">
-                <h4>섭취량</h4>
-                <form id="inputData">
-                    <input type="number" value="1.0">
-                    <button>저장</button>
-                </form>
-                <span class="print_data">열량<span>kcal</span></span>
-                <span class="print_data">탄수화물<span>100g</span></span>
-                <span class="print_data">단백질<span>200g</span></span>
-                <span class="print_data">지방<span>300g</span></span>
-            </div>
-            <button>저장</button>
-        </li> -->
-    </ul>
+        <ul id="list">
+        </ul>
+    </div>
     <footer id="footer">
-        <h2 id="foodName">섭취정보</h2>
-        <span class="print_data data1">열량</span>
-        <span class="print_data data2">탄수화물</span>
-        <span class="print_data data3">단백질</span>
-        <span class="print_data data4">지방</span>
-        <button id="delete">전체 입력정보 삭제</button>
+        <div class="total_container">
+            <h2 class="total_title">섭취정보</h2>
+            <span class="print_data data1">열량(kcal)</span>
+            <span class="print_data data2">탄수화물(g)</span>
+            <span class="print_data data3">단백질(g)</span>
+            <span class="print_data data4">지방(g)</span>
+            <button id="delete">전체 입력정보 삭제</button>
+        </div>
     </footer>
+    <script src="https://kit.fontawesome.com/1818959bdb.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 
